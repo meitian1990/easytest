@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	/*#339966原来的颜色*/
+
+	</style>
+
+	<link href="/static/css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="content">
+	<div>项目管理</div>
+	<div id="operation">
+		<div class="search">
+			<input type="text" placeholder="请输入要搜索的项目名称">
+			<button>搜索</button>
+		</div>
+		<div class="newproject">
+			<button onclick="window.location='/newproject'">新建项目</button>
+		</div>
+	</div>
+	<div id="list">
+		<table class="projectlist" border="1px" cellspacing="0" cellpadding="4">
+			<tr>
+				<th>项目名称</th>
+				<th>产品</th>
+				<th>开发</th>
+				<th>测试</th>
+				<th>UI</th>
+				<th>上线时间</th>
+				<th>状态</th>
+				<th>操作</th>
+			</tr>
+            {% for project in projectlist %}
+			<tr>
+				<td>{{ project.name}}</td>
+				<td>{{ project.pmember}}</td>
+				<td>{{ project.devmember }}</td>
+				<td>{{ project.testmember }}</td>
+				<td>{{ project.uimember }}</td>
+				<td>{{ project.date }}</td>
+				<td>{{ project.status }}</td>
+				<td>
+					<span>
+						<button>编辑</button>
+					</span>
+					<span>
+						<button>删除</button>
+					</span>
+					<span>
+						<button>进度</button>
+					</span>
+				</td>
+			</tr>
+            {% endfor %}
+		</table>
+	</div>
+</div>
+
+
+</body>
+</html>
