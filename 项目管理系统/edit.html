@@ -35,22 +35,23 @@
 	<div>
 		<span>项目管理</span>
 		<span>>></span>
-		<span>新建项目</span>
+		<span>编辑项目</span>
 	</div>
 	<div>
 		<form id="formid" method="POST" action="">
             {% csrf_token %}
 			<table>
 				<tr>
+					<td><input type="hidden" name="id" value="{{post.id}}"></td>
 					<td>项目名称：</td>
 					<td>
-						<input id="projectid" name="name" type="text" value="{{ name }}">
+						<input id="projectid" name="name" type="text" value="{{ post.name }}">
 					</td>
 				</tr>
 				<tr>
 					<td>项目说明：</td>
 					<td>
-						<input name="description" type="text" placeholder="请输入项目相关的日期等" value="{{ description }}">
+						<input name="description" type="text" placeholder="请输入项目相关的日期等" value="{{ post.description }}">
 					</td>
 				</tr>
 				<tr>
@@ -59,7 +60,7 @@
 				<tr>
 					<td>人员</td>
 					<td>
-						<input name="pmember" type="text" placeholder="请输入产品人员" value="{{ pmember }}">
+						<input name="pmember" type="text" placeholder="请输入产品人员" value="{{ post.pmember }}">
 					</td>
 				</tr>
 				<tr>
@@ -74,7 +75,7 @@
 				<tr>
 					<td>人员</td>
 					<td>
-						<input name="uimember" type="text" placeholder="请输入UI人员" value="{{ uimember }}">
+						<input name="uimember" type="text" placeholder="请输入UI人员" value="{{ post.uimember }}">
 					</td>
 				</tr>
 				<tr>
@@ -98,7 +99,7 @@
 				<tr>
 					<td>人员</td>
 					<td>
-						<input name="testmember" type="text" placeholder="请输入测试人员" value="{{ testmember }}">
+						<input name="testmember" type="text" placeholder="请输入测试人员" value="{{ post.testmember }}">
 					</td>
 				</tr>
 				<tr>

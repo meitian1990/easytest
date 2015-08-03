@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'projectmanage.projectmanageapp',
+    'projectmanageapp',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'projectmanage.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
+DBNAME = 'projectmanager'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url, patterns
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from projectmanageapp.views import hello,index,newproject,test,insert
+from projectmanageapp import views
 from projectmanage import settings
 from django.conf.urls.static import static
 
@@ -25,8 +25,8 @@ from django.conf.urls.static import static
 #     url(r'^hello/$', include(hello)),
 # ]
 urlpatterns = patterns('',
-    ('^test/$',test),
-    ('^index/$',index),
-    ('^newproject/$',newproject),
-    ('^insert/$',insert),
+    ('^index/$',views.index),
+    ('^newproject/$',views.newproject),
+    ('^insert/$',views.index),
+    ('^edit/(\w+)',views.edit),
     ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
