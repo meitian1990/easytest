@@ -26,6 +26,7 @@ from django.conf.urls.static import static
 # ]
 urlpatterns = patterns('',
     ('^index/$',views.index),
+    ('^index/(\w+)',views.index),
     ('^newproject/$',views.newproject),
     ('^delete/$',views.delete),
     ('^edit/(\w+)',views.edit),

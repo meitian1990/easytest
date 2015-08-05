@@ -47,16 +47,12 @@ def edit(request,param):
     #     templatep = 'edit.html'
     #     post = project.objects(id=param)[0]
     return render_to_response("edit.html", locals(),context_instance=RequestContext(request))
-def index(request):
+def index(request,content=""):
     #使用models.py
-    projectlist = project.objects
-    # if request.method=="POST":
-    #     print("It is running……")
-    #     projectlist = project.objects(name="1")
-    #     print(projectlist)
-    #     return render_to_response('index.html', locals(),context_instance=RequestContext(request))
-    # else:
-    #     print("It is wrong")
+    if content:
+        projectlist = project.objects(name=content)
+    else:
+        projectlist = project.objects
     #使用数据库
     # client = pymongo.MongoClient("localhost",27017)
     # db = client.projectmanager
@@ -76,16 +72,6 @@ def index(request):
     # status="整装待发"
 
     #暂时隐藏的保存操作
-    # if request.method == 'POST' and request.POST['name'] is not None:
-    #    name = request.POST['name']
-    #    description = request.POST['description']
-    #    pmember = request.POST['pmember']
-    #    devmember = request.POST['devmember']
-    #    testmember = request.POST['testmember']
-    #    uimember = request.POST['uimember']
-    #    post = project(name=name, pmember=pmember,devmember=devmember,testmember=testmember,uimember=uimember,status="测试中")
-    #    post.last_update = datetime.now()
-    #    post.save()
 
     return render_to_response('index.html', locals(),context_instance=RequestContext(request))
 
