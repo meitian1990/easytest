@@ -38,9 +38,13 @@
 		<span>新建项目</span>
 	</div>
 	<div>
-		<form id="formid" method="POST" action="">
+		<form id="formid" method="POST" action="" enctype="multipart/form-data">
             {% csrf_token %}
 			<table>
+
+
+
+
 				<tr>
 					<td>项目名称：</td>
 					<td>
@@ -65,7 +69,12 @@
 				<tr>
 					<td>产品附件</td>
 					<td>
-						<button>上传附件</button>
+                        <input type="file" name="proupload"/>
+{#                        <form action="" method="post" enctype="multipart/form-data">#}
+{#                            {% csrf_token %}#}
+{#                            <input type="file" name="proupload"/>#}
+{#                            <button type="submit">上传附件</button>#}
+{#                        </form>#}
 					</td>
 				</tr>
 				<tr>

@@ -14,5 +14,7 @@ class project(Document):
     status = StringField(max_length=120, required=False)
     date = DateTimeField(required=False)
     last_update = DateTimeField(required=False)
+    file = FileField()
+    proadress = StringField(max_length=120, required=False)
 # for e in project.objects.all():
 #     print(e["id"], e["name"], e["pmember"])

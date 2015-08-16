@@ -7,6 +7,9 @@ import pymongo
 from projectmanageapp.models import project
 from django.template import Template, Context, RequestContext
 
+# def upload(request):
+#     if request.method == "POST":
+#         file = request.FILES["proupload"]
 
 
 # Create your views here.
@@ -26,6 +29,8 @@ def edit(request,param):
     # post = project.objects(pk=param)[0]
     #小稳子建议用get
     post = project.objects.get(pk=param)
+    if post.file:
+        pload = post.file.read()
     for i in project.objects(pk=param):
         print(i)
     if request.method == 'POST':
@@ -74,6 +79,13 @@ def index(request,content=""):
     #暂时隐藏的保存操作
 
     return render_to_response('index.html', locals(),context_instance=RequestContext(request))
+#上传文件方法
+def uploaded_file(f,filename):
+    address ='C:/Users/msun.sun/Desktop/'+filename
+    destination = open(address, 'wb+')
+    for chunk in f.chunks():
+        destination.write(chunk)
+    destination.close()
 
 def newproject(request):
     if request.method == 'POST' and request.POST['name'] is not None:
@@ -84,6 +96,12 @@ def newproject(request):
         testmember = request.POST['testmember']
         uimember = request.POST['uimember']
         post = project(name=name, description=description,pmember=pmember,devmember=devmember,testmember=testmember,uimember=uimember,status="测试中")
+        # # file = request.FILES.getlist()
+        # file = request.FILES['proupload']
+        # post.file.put(file,filename=file.name)
+        filename =request.FILES['proupload'].name
+        uploaded_file(request.FILES['proupload'],filename)
+        post.proadress = filename
         post.last_update = datetime.now()
         post.save()
         return HttpResponseRedirect('/index/')
