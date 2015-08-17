@@ -29,6 +29,15 @@
 	</style>
 
 	<link href="/static/css/newproject.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        body{ font-size:14px;}
+        input{ vertical-align:middle; margin:0; padding:0}
+        .file-box{ position:relative;width:340px}
+        .txt{ height:22px; border:1px solid #cdcdcd; width:180px;}
+        .btn{ background-color:#FFF; border:1px solid #CDCDCD;height:24px; width:70px;}
+        .file{ position:absolute; top:0; right:80px; height:24px; filter:alpha(opacity:0);opacity: 0;width:260px }
+    </style>
+
 </head>
 <body>
 <div class="content">
@@ -38,7 +47,7 @@
 		<span>新建项目</span>
 	</div>
 	<div>
-		<form id="formid" method="POST" action="">
+		<form id="formid" method="POST" action="" enctype="multipart/form-data">
             {% csrf_token %}
 			<table>
 				<tr>
@@ -65,7 +74,24 @@
 				<tr>
 					<td>产品附件</td>
 					<td>
-						<button>上传附件</button>
+{#                        <form action="/uploadfile/" method="post">#}
+{#                            <input type="file" name="" value=""/>#}
+{#						    <button onclick="uploadfile();">上传附件</button>#}
+{#                        </form>#}
+                        <div class="file-box">
+                            <input type='text' name='protextfield' id='protextfield' class='txt' />
+                            <input type='button' class='btn' value='浏览...' />
+                            <input type="file" name="proupload" class="file" id="fileField" size="28" onchange="document.getElementById('protextfield').value=this.value" />
+                            <input type="submit" name="submit" class="btn" value="上传" />
+{#                            <form action="" method="post" enctype="multipart/form-data">#}
+{#                                <input type='text' name='protextfield' id='protextfield' class='txt' />#}
+{#                                <input type='button' class='btn' value='浏览...' />#}
+{#                                <input type="file" name="proupload" class="file" id="fileField" size="28" onchange="document.getElementById('protextfield').value=this.value" />#}
+{#                                <input type="submit" name="submit" class="btn" value="上传" />#}
+{#                            </form>#}
+                        </div>
+
+
 					</td>
 				</tr>
 				<tr>
@@ -80,7 +106,14 @@
 				<tr>
 					<td>UI附件</td>
 					<td>
-						<button>上传附件</button>
+						<div class="file-box">
+{#                            <form action="" method="post" enctype="multipart/form-data">#}
+{#                                <input type='text' name='uitextfield' id='uitextfield' class='txt' />#}
+{#                                <input type='button' class='btn' value='浏览...' />#}
+{#                                <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('uitextfield').value=this.value" />#}
+{#                                <input type="submit" name="submit" class="btn" value="上传" />#}
+{#                            </form>#}
+                        </div>
 					</td>
 				</tr>
 				<tr>
@@ -104,7 +137,14 @@
 				<tr>
 					<td>测试附件</td>
 					<td>
-						<button>测试附件</button>
+						<div class="file-box">
+{#                            <form action="" method="post" enctype="multipart/form-data">#}
+{#                                <input type='text' name='testtextfield' id='testtextfield' class='txt' />#}
+{#                                <input type='button' class='btn' value='浏览...' />#}
+{#                                <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('testtextfield').value=this.value" />#}
+{#                                <input type="submit" name="submit" class="btn" value="上传" />#}
+{#                            </form>#}
+                        </div>
 					</td>
 					
 				</tr>

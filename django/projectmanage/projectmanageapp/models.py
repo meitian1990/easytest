@@ -14,5 +14,11 @@ class project(Document):
     status = StringField(max_length=120, required=False)
     date = DateTimeField(required=False)
     last_update = DateTimeField(required=False)
+    title = StringField(max_length=120)
+    file = FileField()
+# class UploadFile(Document):
+#     project = models.ForeignKey(project)
+#     title = StringField(max_length=120)
+#     file = FileField()
 # for e in project.objects.all():
 #     print(e["id"], e["name"], e["pmember"])

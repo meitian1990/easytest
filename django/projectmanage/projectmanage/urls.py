@@ -30,4 +30,5 @@ urlpatterns = patterns('',
     ('^newproject/$',views.newproject),
     ('^delete/$',views.delete),
     ('^edit/(\w+)',views.edit),
+    ('^uploadfile/$',views.uploadfile),
     ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -119,3 +119,6 @@ STATICFILES_DIRS = ('',
     # os.path.join(STATIC_ROOT,'images').replace('\\','/'),
 )
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = 'D:\djangogit\django\projectmanage\projectmanageapp\media'
+MEDIA_URL = '/media/'

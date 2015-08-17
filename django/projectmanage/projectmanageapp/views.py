@@ -6,6 +6,7 @@ from bson import json_util as json
 import pymongo
 from projectmanageapp.models import project
 from django.template import Template, Context, RequestContext
+from mongoengine import *
 
 
 
@@ -13,6 +14,14 @@ from django.template import Template, Context, RequestContext
 # def current_datetime(request):
 #     current_date = datetime.datetime.now()
 #     return render_to_response('current_datetime.html', locals())
+def uploadfile(request):
+    # if request.method == "POST":
+    #     form = UploadFile(request.POST,request.FILES)
+    #     if form.is_valid():
+    #         # handle_uploaded_file(request.FILES['file'])
+    #         return
+    return
+
 def delete(request):
     if request.method=="POST":
         id = request.POST["del"]
@@ -84,6 +93,9 @@ def newproject(request):
         testmember = request.POST['testmember']
         uimember = request.POST['uimember']
         post = project(name=name, description=description,pmember=pmember,devmember=devmember,testmember=testmember,uimember=uimember,status="测试中")
+        profile = request.FILES["proupload"]
+        post.file.put(profile)
+        # post.file.put(open(r'C:\\Users\min.sun\Desktop\阿布.jpg','rb'))
         post.last_update = datetime.now()
         post.save()
         return HttpResponseRedirect('/index/')
