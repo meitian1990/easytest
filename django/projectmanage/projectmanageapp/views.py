@@ -84,6 +84,13 @@ def index(request,content=""):
 
     return render_to_response('index.html', locals(),context_instance=RequestContext(request))
 
+def uploaded_file(f,filename):
+    address ='C:/Users/min.sun/Desktop/'+filename
+    destination = open(address, 'wb+')
+    for chunk in f.chunks():
+        destination.write(chunk)
+    destination.close()
+
 def newproject(request):
     if request.method == 'POST' and request.POST['name'] is not None:
         name = request.POST['name']
@@ -93,8 +100,12 @@ def newproject(request):
         testmember = request.POST['testmember']
         uimember = request.POST['uimember']
         post = project(name=name, description=description,pmember=pmember,devmember=devmember,testmember=testmember,uimember=uimember,status="测试中")
-        profile = request.FILES["proupload"]
-        post.file.put(profile)
+        if request.FILES:
+            filename =request.FILES['proupload'].name
+            uploaded_file(request.FILES['proupload'],filename)
+            post.proadress = filename
+        # profile = request.FILES["proupload"]
+        # post.file.put(profile)
         # post.file.put(open(r'C:\\Users\min.sun\Desktop\阿布.jpg','rb'))
         post.last_update = datetime.now()
         post.save()
