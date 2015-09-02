@@ -1,0 +1,23 @@
+.content{
+	width:1100px;
+	height:100%px;
+	margin:auto;
+}
+#operation{
+	width: 1100px;
+	float: left;
+}
+#list{
+	width: 1100px;
+	float: left;
+}
+.search{
+	float: left;
+}
+.newproject{
+	float: left;
+}
+.projectlist{
+	float: left;
+	border: thin solid #E0E0E0;
+}

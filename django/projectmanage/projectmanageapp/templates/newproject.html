@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script language="javascript" type="text/javascript">
+		function checkUser(){
+            var result = document.getElementById("projectid").value;
+            if(result == ""  ){
+			    alert("项目名称不能为空");
+			    return false;
+            }
+            else if(result !=""){
+                document.getElementById("formid").action="";
+                var form=document.getElementById("formid")
+                from.submit();
+                return true
+			  // document.getElementById("formid").submit();
+                }
+			}
+        function cancel(){
+            document.getElementById("formid").method="GET";
+            document.getElementById("formid").action="/index/";
+        }
+	</script>
+	<style type="text/css">
+	/*#339966原来的颜色*/
+
+	</style>
+
+	<link href="/static/css/newproject.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        body{ font-size:14px;}
+        input{ vertical-align:middle; margin:0; padding:0}
+        .file-box{ position:relative;width:340px}
+        .txt{ height:22px; border:1px solid #cdcdcd; width:180px;}
+        .btn{ background-color:#FFF; border:1px solid #CDCDCD;height:24px; width:70px;}
+        .file{ position:absolute; top:0; right:80px; height:24px; filter:alpha(opacity:0);opacity: 0;width:260px }
+    </style>
+
+</head>
+<body>
+<div class="content">
+	<div>
+		<span>项目管理</span>
+		<span>>></span>
+		<span>新建项目</span>
+	</div>
+	<div>
+		<form id="formid" method="POST" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+			<table>
+				<tr>
+					<td>项目名称：</td>
+					<td>
+						<input id="projectid" name="name" type="text" value="{{ name }}">
+					</td>
+				</tr>
+				<tr>
+					<td>项目说明：</td>
+					<td>
+						<input name="description" type="text" placeholder="请输入项目相关的日期等" value="{{ description }}">
+					</td>
+				</tr>
+				<tr>
+					<td>产品</td>
+				</tr>
+				<tr>
+					<td>人员</td>
+					<td>
+						<input name="pmember" type="text" placeholder="请输入产品人员" value="{{ pmember }}">
+					</td>
+				</tr>
+				<tr>
+					<td>产品附件</td>
+					<td>
+{#                        <form action="/uploadfile/" method="post">#}
+{#                            <input type="file" name="" value=""/>#}
+{#						    <button onclick="uploadfile();">上传附件</button>#}
+{#                        </form>#}
+                        <div class="file-box">
+                            <input type='text' name='protextfield' id='protextfield' class='txt' />
+                            <input type='button' class='btn' value='浏览...' />
+                            <input type="file" name="proupload" class="file" id="fileField" size="28" onchange="document.getElementById('protextfield').value=this.value" />
+                            <input type="submit" name="submit" class="btn" value="上传" />
+{#                            <form action="" method="post" enctype="multipart/form-data">#}
+{#                                <input type='text' name='protextfield' id='protextfield' class='txt' />#}
+{#                                <input type='button' class='btn' value='浏览...' />#}
+{#                                <input type="file" name="proupload" class="file" id="fileField" size="28" onchange="document.getElementById('protextfield').value=this.value" />#}
+{#                                <input type="submit" name="submit" class="btn" value="上传" />#}
+{#                            </form>#}
+                        </div>
+
+
+					</td>
+				</tr>
+				<tr>
+					<td>UI</td>
+				</tr>
+				<tr>
+					<td>人员</td>
+					<td>
+						<input name="uimember" type="text" placeholder="请输入UI人员" value="{{ uimember }}">
+					</td>
+				</tr>
+				<tr>
+					<td>UI附件</td>
+					<td>
+						<div class="file-box">
+{#                            <form action="" method="post" enctype="multipart/form-data">#}
+{#                                <input type='text' name='uitextfield' id='uitextfield' class='txt' />#}
+{#                                <input type='button' class='btn' value='浏览...' />#}
+{#                                <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('uitextfield').value=this.value" />#}
+{#                                <input type="submit" name="submit" class="btn" value="上传" />#}
+{#                            </form>#}
+                        </div>
+					</td>
+				</tr>
+				<tr>
+					<td>开发</td>
+				</tr>
+				<tr>
+					<td>人员</td>
+					<td>
+						<input name="devmember" type="text" placeholder="请输入开发人员" value="{{ devmember }}">
+					</td>
+				</tr>
+				<tr>
+					<td>测试</td>
+				</tr>
+				<tr>
+					<td>人员</td>
+					<td>
+						<input name="testmember" type="text" placeholder="请输入测试人员" value="{{ testmember }}">
+					</td>
+				</tr>
+				<tr>
+					<td>测试附件</td>
+					<td>
+						<div class="file-box">
+{#                            <form action="" method="post" enctype="multipart/form-data">#}
+{#                                <input type='text' name='testtextfield' id='testtextfield' class='txt' />#}
+{#                                <input type='button' class='btn' value='浏览...' />#}
+{#                                <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('testtextfield').value=this.value" />#}
+{#                                <input type="submit" name="submit" class="btn" value="上传" />#}
+{#                            </form>#}
+                        </div>
+					</td>
+					
+				</tr>
+			</table>
+			<div>
+				<button onclick="checkUser();">保存</button>
+				<button onclick="cancel();">取消</button>
+			</div>
+		</form>
+	</div>
+	
+</div>
+</body>
+</html>
