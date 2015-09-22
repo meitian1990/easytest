@@ -2,7 +2,7 @@ __author__ = 'min.sun'
 
 from openpyxl import *
 #获得excel中的测试套件
-def getsuit(filename):
+def getsuit(filename,logger):
     testsuitlist = []
     try:
         wb = load_workbook(filename = filename)
@@ -20,6 +20,7 @@ def getsuit(filename):
         # print(testsuitlist)
     except IOError:
         print("file:"+filename+" is not exesit")
+        logger.error("文件："+filename+"不存在")
     return testsuitlist
 #获得excel中的XX用例模块，用suit作为模块的sheet名称，例如登录用例
 def gettestcase(filename,suit):
@@ -43,6 +44,7 @@ def gettestcase(filename,suit):
             print("请先在用例中增加对应的用例模块：",suit)
     except IOError:
         print("file:"+filename+" is not exesit")
+
 #获得excel中的测试元素
 def gettestelement(filename):
     testelementlist = []
@@ -71,11 +73,13 @@ def testcase(filename,suit):
     if testcaselist is not None:
         for testcase in testcaselist:
             #加这个if语句是因为有的用例，assertTitle之类的是没有对应的测试元素的，如果直接走下面的for循环，该用例不会加到测试组里
-            if testcase["testoperation"] == "assertTitle":
+            # if testcase["testoperation"] == "assertTitle":
+            #为什么只加assertTitle，是因为这个assertText是有定位方式的，而title是没有定位方式的
+            if "assertTitle" in testcase["testoperation"]:
                 list = {}
                 list["pageobject"] = testcase["pageobject"]
                 list["testobject"] = testcase["testobject"]
-                # list["positionway"] = testelement["positionway"]
+                #list["positionway"] = testcase["positionway"]
                 # list["testelement"] = testelement["testelement"]
                 list["testoperation"] = testcase["testoperation"]
                 list["testdata"] = testcase["testdata"]

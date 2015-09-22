@@ -1,0 +1,153 @@
+2015-09-21 18:50:50,484  - [testframework.py:23] - INFO - 测试开始......................
+2015-09-21 18:50:56,705  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "javascriptEnabled": true, "version": "", "marionette": false}}
+2015-09-21 18:50:56,758  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:50:56,758  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/window/current/maximize {"sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0", "windowHandle": "current"}
+2015-09-21 18:50:56,927  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:22,142  - [performtest.py:10] - INFO - 测试套件【 登录用例 】正在执行..................
+2015-09-21 18:51:22,142  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/url {"url": "http://c.highpin.cn", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:25,425  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:25,425  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element {"value": "Logon_UserEmail", "using": "id", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:25,477  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:25,477  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element/{74490675-5037-40e8-b025-94a0cb6090ad}/value {"value": ["s", "u", "n", "1", "2", "1", "@", "q", "q", ".", "c", "o", "m"], "id": "{74490675-5037-40e8-b025-94a0cb6090ad}", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:25,533  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:25,533  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element {"value": "Logon_Password", "using": "id", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:25,539  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:25,539  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element/{c7fcca83-db96-409c-b36e-630d9aad9006}/value {"value": ["s", "u", "n", "m", "i", "n"], "id": "{c7fcca83-db96-409c-b36e-630d9aad9006}", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:25,573  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:25,573  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element {"value": "Logon_PostCode", "using": "id", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:25,579  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:25,579  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element/{974c9e83-738d-45c1-8dc5-6bdf9170c1db}/value {"value": ["1", "2", "3", "4"], "id": "{974c9e83-738d-45c1-8dc5-6bdf9170c1db}", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:25,610  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:25,610  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element {"value": "input.CLoginBtn.borRadius.width-300", "using": "css selector", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:25,615  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:25,615  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element/{90880b33-2664-4fb8-b0bb-05a432ade8fb}/click {"sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0", "id": "{90880b33-2664-4fb8-b0bb-05a432ade8fb}"}
+2015-09-21 18:51:30,653  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:30,653  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element {"value": "show_name", "using": "id", "sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:30,791  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:30,792  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0/element/{46c01414-4fbc-47d0-adfa-3c201f14571d}/attribute/innerHTML {"sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0", "id": "{46c01414-4fbc-47d0-adfa-3c201f14571d}", "name": "innerHTML"}
+2015-09-21 18:51:30,804  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:30,805  - [testframework.py:64] - INFO - 测试结束………………………………………………
+2015-09-21 18:51:30,805  - [remote_connection.py:409] - DEBUG - DELETE http://127.0.0.1:22446/hub/session/f07f7934-8dba-4502-926d-2b4ebe9368b0 {"sessionId": "f07f7934-8dba-4502-926d-2b4ebe9368b0"}
+2015-09-21 18:51:30,810  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:51:30,997  - [testframework.py:66] - INFO - 测试结束,等待打印报告………………………………………………
+2015-09-21 18:51:30,998  - [testframework.py:68] - INFO - 报告打印完毕………………………………………………
+2015-09-21 18:53:41,145  - [testframework.py:23] - INFO - 测试开始......................
+2015-09-21 18:53:47,353  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session {"desiredCapabilities": {"version": "", "browserName": "firefox", "javascriptEnabled": true, "platform": "ANY", "marionette": false}}
+2015-09-21 18:53:47,458  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:53:47,458  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/window/current/maximize {"sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b", "windowHandle": "current"}
+2015-09-21 18:53:47,497  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:12,641  - [performtest.py:10] - INFO - 测试套件【 登录用例 】正在执行..................
+2015-09-21 18:54:12,641  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/url {"url": "http://c.highpin.cn", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:15,885  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:15,886  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element {"value": "Logon_UserEmail", "using": "id", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:15,925  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:15,925  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element/{5d3d852c-468d-4627-bd42-007b5aee3108}/value {"value": ["s", "u", "n", "1", "2", "1", "@", "q", "q", ".", "c", "o", "m"], "id": "{5d3d852c-468d-4627-bd42-007b5aee3108}", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:15,975  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:15,975  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element {"value": "Logon_Password", "using": "id", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:15,980  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:15,980  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element/{4c877f3b-a114-479c-a54c-9f45d01d6dd0}/value {"value": ["s", "u", "n", "m", "i", "n"], "id": "{4c877f3b-a114-479c-a54c-9f45d01d6dd0}", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:16,011  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:16,011  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element {"value": "Logon_PostCode", "using": "id", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:16,016  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:16,016  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element/{cf5f3cb5-f813-4f06-bf9e-d21a988d8b3d}/value {"value": ["1", "2", "3", "4"], "id": "{cf5f3cb5-f813-4f06-bf9e-d21a988d8b3d}", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:16,046  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:16,046  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element {"value": "input.CLoginBtn.borRadius.width-300", "using": "css selector", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:16,050  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:16,050  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element/{132860d5-1f1b-4272-bb0e-319e35b35bd5}/click {"id": "{132860d5-1f1b-4272-bb0e-319e35b35bd5}", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:19,383  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:19,383  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element {"value": "show_name", "using": "id", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:19,398  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:19,399  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element/{05c20224-fb18-4db9-9ef8-d47ab0ba5472}/attribute/innerHTML {"name": "innerHTML", "id": "{05c20224-fb18-4db9-9ef8-d47ab0ba5472}", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:19,405  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:19,406  - [operation.py:28] - ERROR - Text 验证失败，期望 ：【孙er】，实际上是【孙一】
+2015-09-21 18:54:19,406  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/screenshot {"sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:20,023  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:20,028  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/title {"sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:20,035  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:20,035  - [operation.py:43] - ERROR - title 验证失败，期望 ：【找猎头，找工作–智联卓聘】，实际上是【高端招聘，找猎头，找工作–智联卓聘】
+2015-09-21 18:54:20,035  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/screenshot {"sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:20,652  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:25,657  - [performtest.py:23] - INFO - 测试套件【 登录用例 】执行通过..................
+2015-09-21 18:54:25,657  - [performtest.py:25] - INFO - 通过数量加1
+2015-09-21 18:54:25,657  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:25,668  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:51,185  - [performtest.py:10] - INFO - 测试套件【 搜索职位 】正在执行..................
+2015-09-21 18:54:51,185  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/url {"url": "http://www.highpin.cn/zhiwei/", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:56,271  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:56,271  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element {"value": "Q", "using": "id", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:56,281  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:56,282  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element/{c2c8f683-dc04-409b-b274-4fb2baff4122}/value {"value": ["\u6d4b", "\u8bd5"], "id": "{c2c8f683-dc04-409b-b274-4fb2baff4122}", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:56,314  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:56,314  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element {"value": "c-search-btns", "using": "class name", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:54:56,325  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:54:56,325  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/element/{3d0239ba-1761-47f3-89f4-821fdbe17acf}/click {"id": "{3d0239ba-1761-47f3-89f4-821fdbe17acf}", "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:55:00,723  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:55:05,724  - [performtest.py:23] - INFO - 测试套件【 搜索职位 】执行通过..................
+2015-09-21 18:55:05,724  - [performtest.py:25] - INFO - 通过数量加1
+2015-09-21 18:55:05,724  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:55:05,735  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:55:05,736  - [testframework.py:64] - INFO - 测试结束………………………………………………
+2015-09-21 18:55:05,736  - [remote_connection.py:409] - DEBUG - DELETE http://127.0.0.1:22665/hub/session/17e93954-93fb-414e-9cdc-96ec380af35b {"sessionId": "17e93954-93fb-414e-9cdc-96ec380af35b"}
+2015-09-21 18:55:05,744  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-21 18:55:05,991  - [testframework.py:66] - INFO - 测试结束,等待打印报告………………………………………………
+2015-09-21 18:55:05,991  - [testframework.py:68] - INFO - 报告打印完毕………………………………………………
+2015-09-22 08:00:17,468  - [testframework.py:23] - INFO - 测试开始......................
+2015-09-22 08:00:24,188  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session {"desiredCapabilities": {"version": "", "marionette": false, "browserName": "firefox", "platform": "ANY", "javascriptEnabled": true}}
+2015-09-22 08:00:24,507  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:00:24,508  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/window/current/maximize {"windowHandle": "current", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:00:24,538  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:00:49,574  - [performtest.py:10] - INFO - 测试套件【 登录用例 】正在执行..................
+2015-09-22 08:00:49,575  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/url {"url": "http://c.highpin.cn", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:01:55,239  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:01:55,240  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element {"using": "id", "value": "Logon_UserEmail", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:01:55,308  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:01:55,308  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element/{30fa4622-2e5a-4c33-a101-835a2063c625}/value {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6", "value": ["s", "u", "n", "1", "2", "1", "@", "q", "q", ".", "c", "o", "m"], "id": "{30fa4622-2e5a-4c33-a101-835a2063c625}"}
+2015-09-22 08:01:55,358  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:01:55,358  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element {"using": "id", "value": "Logon_Password", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:01:55,362  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:01:55,363  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element/{8e77b531-2806-4ef0-96dd-8c80db9b1f5b}/value {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6", "value": ["s", "u", "n", "m", "i", "n"], "id": "{8e77b531-2806-4ef0-96dd-8c80db9b1f5b}"}
+2015-09-22 08:01:55,391  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:01:55,391  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element {"using": "id", "value": "Logon_PostCode", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:01:55,396  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:01:55,396  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element/{aed8e364-95fd-4223-a629-1fb6fc22387a}/value {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6", "value": ["1", "2", "3", "4"], "id": "{aed8e364-95fd-4223-a629-1fb6fc22387a}"}
+2015-09-22 08:01:55,423  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:01:55,424  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element {"using": "css selector", "value": "input.CLoginBtn.borRadius.width-300", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:01:55,428  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:01:55,428  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element/{2f2d1cff-6da8-4f88-8264-59a9894d9410}/click {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6", "id": "{2f2d1cff-6da8-4f88-8264-59a9894d9410}"}
+2015-09-22 08:04:13,433  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:04:13,433  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element {"using": "id", "value": "show_name", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:04:13,442  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:04:13,443  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element/{9113106e-1680-4673-9736-0a886327f650}/attribute/innerHTML {"name": "innerHTML", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6", "id": "{9113106e-1680-4673-9736-0a886327f650}"}
+2015-09-22 08:04:13,450  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:04:13,450  - [operation.py:28] - ERROR - Text 验证失败，期望 ：【孙er】，实际上是【孙一】
+2015-09-22 08:04:13,450  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/screenshot {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:04:13,966  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:04:13,970  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/title {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:04:13,975  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:04:13,975  - [operation.py:43] - ERROR - title 验证失败，期望 ：【找猎头，找工作–智联卓聘】，实际上是【高端招聘，找猎头，找工作–智联卓聘】
+2015-09-22 08:04:13,975  - [remote_connection.py:409] - DEBUG - GET http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/screenshot {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:04:14,467  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:04:19,472  - [performtest.py:23] - INFO - 测试套件【 登录用例 】执行通过..................
+2015-09-22 08:04:19,472  - [performtest.py:25] - INFO - 通过数量加1
+2015-09-22 08:04:19,472  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:04:19,481  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:04:45,169  - [performtest.py:10] - INFO - 测试套件【 搜索职位 】正在执行..................
+2015-09-22 08:04:45,169  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/url {"url": "http://www.highpin.cn/zhiwei/", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:07:01,475  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:07:01,476  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element {"using": "id", "value": "Q", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:07:01,484  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:07:01,484  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element/{44ae3089-12cc-4a1a-bf0a-2274f368b2e3}/value {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6", "value": ["\u6d4b", "\u8bd5"], "id": "{44ae3089-12cc-4a1a-bf0a-2274f368b2e3}"}
+2015-09-22 08:07:01,515  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:07:01,515  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element {"using": "class name", "value": "c-search-btns", "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:07:01,520  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:07:01,520  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/element/{becdf898-8e7a-4b3e-8de4-daba3821a9e9}/click {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6", "id": "{becdf898-8e7a-4b3e-8de4-daba3821a9e9}"}
+2015-09-22 08:09:15,499  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:09:20,500  - [performtest.py:23] - INFO - 测试套件【 搜索职位 】执行通过..................
+2015-09-22 08:09:20,500  - [performtest.py:25] - INFO - 通过数量加1
+2015-09-22 08:09:20,500  - [remote_connection.py:409] - DEBUG - POST http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:09:20,512  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:09:20,512  - [testframework.py:64] - INFO - 测试结束………………………………………………
+2015-09-22 08:09:20,512  - [remote_connection.py:409] - DEBUG - DELETE http://127.0.0.1:28717/hub/session/d5039487-2ed9-489e-b29c-09d87de71fd6 {"sessionId": "d5039487-2ed9-489e-b29c-09d87de71fd6"}
+2015-09-22 08:09:20,519  - [remote_connection.py:502] - DEBUG - Finished Request
+2015-09-22 08:09:20,668  - [testframework.py:66] - INFO - 测试结束,等待打印报告………………………………………………
+2015-09-22 08:09:20,669  - [testframework.py:68] - INFO - 报告打印完毕………………………………………………
